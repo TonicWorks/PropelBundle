@@ -1,5 +1,5 @@
 {
-  "name": "propel/propel-bundle",
+  "name": "tonic-works/propel-bundle",
   "description": "Integration of Propel in Symfony2",
   "keywords": ["propel", "orm", "persistence"],
   "type": "symfony-bundle",
@@ -16,7 +16,7 @@
   },
 
   "require": {
-    "propel/propel1": "^1.6.8",
+    "tonic-works/propel1": "^1.7.2",
     "symfony/framework-bundle": "^2.8.2"
   },
   "require-dev": {
@@ -36,5 +36,12 @@
 
   "suggest": {
     "propel/propel-acl-bundle": "For using the Propel ACL implementation"
-  }
+  },
+
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:TonicWorks/Propel.git"
+    }
+  ]
 }
