@@ -19,7 +19,6 @@
   },
   "require": {
     "tonic-works/propel1": "^1.7.0",
-    "propel/propel1": "^1.6.8",
     "symfony/framework-bundle": "^3.0.2"
   },
   "require-dev": {
