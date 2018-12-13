@@ -1,5 +1,5 @@
 {
-  "name": "propel/propel-bundle",
+  "name": "tonic-works/propel-bundle",
   "description": "Integration of Propel in Symfony2",
   "keywords": ["propel", "orm", "persistence"],
   "type": "symfony-bundle",
@@ -14,8 +14,11 @@
     "files": ["autoload_aliases.php"],
     "exclude-from-classmap": [ "Tests/" ]
   },
-
+  "replace": {
+    "propel/propel-bundle": "^1.5"
+  },
   "require": {
+    "tonic-works/propel1": "^1.7.0",
     "propel/propel1": "^1.6.8",
     "symfony/framework-bundle": "^3.0.2"
   },
@@ -25,14 +28,6 @@
     "symfony/symfony": "^3.0.2",
     "sensio/framework-extra-bundle": "^3.0.2",
     "fzaninotto/faker": "^1.5"
-  },
-
-  "conflict": {
-    "symfony/propel1-bridge": ">=2.8.0"
-  },
-
-  "replace": {
-    "symfony/propel1-bridge": "<=2.8.0"
   },
 
   "suggest": {
