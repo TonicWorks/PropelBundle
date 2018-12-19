@@ -209,7 +209,7 @@ abstract class AbstractCommand extends ContainerAwareCommand
             $returnStatus = false;
         }
 
-        if ($bufferPhingOutput === false) {
+        if ($bufferPhingOutput) {
             ob_end_clean();
         } else {
             ob_end_flush();
